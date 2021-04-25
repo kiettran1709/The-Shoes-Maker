@@ -1,0 +1,108 @@
+/*Nav*/
+.navbar-brand{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.nav-link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+	padding: 5px 20px;
+	color: #fff;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+.nav-item a:hover{
+    border-radius: 50px;
+    background-color: palevioletred;
+}
+/*Header*/
+.jumbotron-header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(images/contact.png);
+    height: 650px;
+}
+.jumbotron-header h1{
+    color: oldlace;
+    size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.jumbotron-header p{
+    color: ivory;
+    size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Card*/ /*&*/ /*Modal*/
+.card{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    width: 18rem;
+    border: none;
+}
+.card-content{
+    display: flex;
+    margin-left: 300px;
+    padding: 50px;
+}
+.modal-body{
+    text-align: left;
+}
+/*Jumbotron information*/
+.right{
+    transform: translate(180px, 0px);
+}
+/*Google Maps*/
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    margin-top: -31px;
+    position:relative;
+}
+
+ .map-container iframe{
+    left:0;
+    top:0;
+    height:800px;
+    width:100%;
+    position:absolute;
+}
+input.ng-invalid {
+    background-image: url(images/fire.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .card-content{
+        width: 100%;
+        display: block;
+        margin-left: -10px;
+    }
+    .video-container {
+        overflow: hidden;
+        position: relative;
+        width:100%;
+    }
+    
+    .video-container::after {
+        padding-top: 56.25%;
+        display: block;
+        content: '';
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

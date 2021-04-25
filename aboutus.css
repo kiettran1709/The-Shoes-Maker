@@ -1,0 +1,121 @@
+nav{
+    position: relative;
+}
+hr{
+    width: 50%;
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray
+}
+/*Nav*/
+.navbar-brand{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.nav-link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+	padding: 5px 20px;
+	color: #fff;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+.nav-item a:hover{
+    border-radius: 50px;
+    background-color: palevioletred;
+}
+/*article*/
+.jumbotron-title{
+    margin-top: 10px;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/background-aboutUs.png);
+    height: 300px;
+    background-size: cover;
+    background-position: center center; 
+    
+}
+.banner-title{
+    font-size: 60px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+.banner-text{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 100%;
+    height: auto;
+}
+/*card*/
+.card{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    width: 18rem;
+}
+.card-content{
+    margin-left: 150px;
+    display: inline-flex;
+}
+/*carousel*/
+.carousel-control-prev-icon{
+    background-color: lightcoral;
+    border-radius: 100px ;
+}
+.carousel-control-next-icon{
+    background-color: lightcoral;
+    border-radius: 100px;
+}
+.carousel-caption{
+    position: absolute;
+    color:salmon;
+    text-transform: uppercase;
+}
+.carousel-caption h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+}
+.carousel-caption p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: 600;
+   font-size: 25px;
+}
+.carousel-inner{
+    text-align: center;
+}
+
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+/*jumbotron*/
+.jumbotron{
+    text-align: center;
+    background-color: white;
+    padding-top: 0px;
+}
+/*arcitle-end*/
+/*Footer*/
+.page-footer h5{
+    text-transform: uppercase;
+}
+@media screen and (max-width: 600px){
+    .carousel-inner img{
+        max-width: 100%;
+        height: auto;
+    }
+    .card-content{
+        width: 100%;
+        display: block;
+        margin-left: 25px;
+    }
+}
